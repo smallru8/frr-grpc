@@ -64,7 +64,7 @@ RUN make && make install
 
 FROM ubuntu:20.04
 RUN apt-get update
-RUN apt-get install -y libcap-dev libunwind-dev libprotobuf-c-dev libjson-c-dev libreadline-dev
+RUN apt-get install -y libcap-dev libunwind-dev libprotobuf-c-dev libjson-c-dev libreadline-dev libgrpc++-dev protobuf-compiler-grpc
 RUN mkdir /app
 RUN mkdir -p /src/etc/frr
 RUN mkdir /etc/frr
